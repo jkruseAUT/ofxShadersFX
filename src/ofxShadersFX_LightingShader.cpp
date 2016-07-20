@@ -373,7 +373,7 @@ void LightingShader::setupProgrammableRendererLights() {
         }
 
         const GLchar **glnames_ptr = &glnames[0];
-        GLuint indices[glnames.size()];
+        GLuint indices[3];
 
         glGetUniformIndices(m_shader.getProgram(), glnames.size(), glnames_ptr, indices);
 
